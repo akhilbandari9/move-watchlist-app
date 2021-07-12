@@ -18,7 +18,7 @@ const Header = () => {
 
 	return (
 		<header className='w-full border-b border-white border-opacity-20 py-2 flex justify-between items-center px-4'>
-			<div className=''>Log</div>
+			<div className=''></div>
 			<nav>
 				<ul className='flex gap-4'>
 					{links.map((item) => (

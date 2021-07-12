@@ -27,7 +27,7 @@ const movies = ({ list }) => {
 export default movies
 
 //get data
-export async function getServerSideProps() {
+export async function getStaticProps() {
 	const URL = `https://api.themoviedb.org/3/trending/movie/week?api_key=${process.env.TMDB_API_KEY}`
 	const res = await fetch(URL)
 	const { results } = await res.json()
